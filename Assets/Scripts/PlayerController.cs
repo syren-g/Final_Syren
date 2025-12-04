@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     
     Animator anim;
     public bool moving;
-    public bool attack;
+    
 
 
    
@@ -52,10 +52,6 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if(Input.GetKey("e") && isGrounded)
-        {
-            attack = true;
-        }
 
         if(Input.GetKeyUp("a") || Input.GetKeyUp("d"))
         {
@@ -63,13 +59,11 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("attack") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
-        {
-            attack = false;
-        }
+        
+     
 
         anim.SetBool("isMoving", moving);
-        anim.SetBool("isAttacking", attack);
+       
 
         transform.position = newPosition;
         transform.localScale = newScale;
