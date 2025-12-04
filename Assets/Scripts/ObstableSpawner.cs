@@ -42,7 +42,7 @@ public class EnemySpawner : MonoBehaviour
     }
     public void SpawnMultipleEnemies()
     {
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 4; i++)
         {
             SpawnRandomEnemy();
         }
