@@ -10,8 +10,8 @@ public class ObstacleInteraction : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Player died");
-            Destroy(gameObject); 
+            Debug.Log("Points Lost");
+            score -= 1;
             Destroy(collision.gameObject);
         }
         else if (collision.gameObject.CompareTag("Point"))
