@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,7 +9,6 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     public float jumpForce;
     public float speed;
-
     
     public bool isGrounded;
 

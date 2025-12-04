@@ -1,11 +1,22 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class ObstacleInteraction : MonoBehaviour
 {
-   
-    public int score = 0;
+    public TextMeshPro ScoreText;
+    public int Score = 0;
 
-     
+    void Start()
+    {
+        UpdateScore();
+    }
+
+     void Update()
+    {
+       
+    }
+
     void OnCollisionEnter2D (Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
@@ -22,11 +33,14 @@ public class ObstacleInteraction : MonoBehaviour
         }
        
     }
+    public void UpdateScore()
+    {
+        ScoreText.text = "Score: " + Score;
+    }
 
-   
-    
-   
 
-  }
+
+
+}
    
     
