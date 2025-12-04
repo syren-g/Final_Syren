@@ -10571,6 +10571,10 @@ MonoBehaviour:
   - {fileID: 3595888365303792847, guid: 88cb0974cedb74d4ebfc528258f2065c, type: 3}
   - {fileID: 16031603144852506, guid: be832686ba0c6144abf7b352302af506, type: 3}
   - {fileID: 8108074532284410719, guid: d07bf67b73599914189713638b1faeca, type: 3}
+  - {fileID: 3595888365303792847, guid: 88cb0974cedb74d4ebfc528258f2065c, type: 3}
+  - {fileID: 3595888365303792847, guid: 88cb0974cedb74d4ebfc528258f2065c, type: 3}
+  - {fileID: 3595888365303792847, guid: 88cb0974cedb74d4ebfc528258f2065c, type: 3}
+  - {fileID: 16031603144852506, guid: be832686ba0c6144abf7b352302af506, type: 3}
   timer: 0
   spawnRate: 5
   xMin: -8
@@ -10604,6 +10608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDirection: {x: 0, y: -1, z: 0}
+  HorizontalMovement: {x: 1, y: 0, z: 0}
   speed: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
