@@ -32,9 +32,9 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 newPosition = transform.position;
 
-       
+
         Vector3 newScale = transform.localScale;
-        float currentScale = Mathf.Abs(transform.localScale.x); 
+        float currentScale = Mathf.Abs(transform.localScale.x);
 
 
         if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow))
@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
             newScale.x = -currentScale;
             moving = true;
         }
+
 
         if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow))
         {
@@ -53,13 +54,11 @@ public class PlayerController : MonoBehaviour
 
 
 
-        if(Input.GetKeyUp("a") || Input.GetKeyUp("d"))
+        if (Input.GetKeyUp("a") || Input.GetKeyUp("d"))
         {
             moving = false;
 
         }
-
-        
      
 
         anim.SetBool("isMoving", moving);
