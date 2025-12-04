@@ -5110,9 +5110,10 @@ GameObject:
   - component: {fileID: 242906797}
   - component: {fileID: 242906796}
   - component: {fileID: 242906795}
+  - component: {fileID: 242906801}
   m_Layer: 7
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5299,6 +5300,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &242906801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242906794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e103acc450756bc4e8f364e01bf32827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
 --- !u!1 &651156846
 GameObject:
   m_ObjectHideFlags: 0
@@ -10367,7 +10381,7 @@ GameObject:
   - component: {fileID: 1007964126}
   m_Layer: 0
   m_Name: extradeadbrain
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10529,7 +10543,7 @@ GameObject:
   - component: {fileID: 1067136983}
   m_Layer: 0
   m_Name: brain
-  m_TagString: Untagged
+  m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10760,7 +10774,7 @@ GameObject:
   - component: {fileID: 1763717141}
   m_Layer: 0
   m_Name: deadbrain
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10922,7 +10936,7 @@ GameObject:
   - component: {fileID: 1846731618}
   m_Layer: 0
   m_Name: goldenbrain
-  m_TagString: Untagged
+  m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
