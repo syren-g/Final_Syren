@@ -22,16 +22,32 @@ public class ObstacleInteraction : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Points Lost");
-            score -= 1;
+            Score -= 1;
             Destroy(collision.gameObject);
+            UpdateScore();
         }
         else if (collision.gameObject.CompareTag("Point"))
         {
             Debug.Log("Point gained");
             Destroy (collision.gameObject);
-            score += 1;
+            Score += 1;
+            UpdateScore();
         }
-       
+        else if (collision.gameObject.CompareTag("Enemy Special"))
+        {
+            Debug.Log("Points Lost");
+            Score -= 2;
+            Destroy(collision.gameObject);
+            UpdateScore();
+        }
+        else if (collision.gameObject.CompareTag("Point Special"))
+        {
+            Debug.Log("Point gained");
+            Destroy(collision.gameObject);
+            Score += 2;
+            UpdateScore();
+        }
+
     }
     public void UpdateScore()
     {

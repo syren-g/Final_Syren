@@ -16,6 +16,18 @@ public class Untouched : MonoBehaviour
             Debug.Log("Point Hit Ground");
             Destroy(collision.gameObject);
         }
+        else if (collision.gameObject.CompareTag("Point Special"))
+        {
+            Debug.Log("Point Hit Ground");
+            Destroy(collision.gameObject);
+        }
+        else if (collision.gameObject.CompareTag("Enemy Special"))
+        {
+            Debug.Log("Enemy Hit Ground");
+            Destroy(collision.gameObject);
+        }
     }
 }
+
+
     

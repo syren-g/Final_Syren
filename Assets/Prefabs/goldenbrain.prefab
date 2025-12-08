@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 8318417312140642202}
   - component: {fileID: 376233488763513699}
   - component: {fileID: 3349841826260329382}
+  - component: {fileID: -9143967988393366930}
   m_Layer: 0
   m_Name: goldenbrain
-  m_TagString: Point
+  m_TagString: Point Special
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,9 +144,9 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8108074532284410719}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 0.0001
   m_LinearDamping: 6.21
@@ -160,5 +161,24 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &-9143967988393366930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108074532284410719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed3f82abf205fe4ab3711771dcdfb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  verticalSpeed: 2
+  horizontalSpeed: 2
+  horizontalAmplitude: 1.5
+  xMin: -6
+  xMax: 6
+  startX: 0
+  rb: {fileID: 3349841826260329382}

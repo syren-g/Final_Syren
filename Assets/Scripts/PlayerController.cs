@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         float currentScale = Mathf.Abs(transform.localScale.x);
 
 
-        if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey("a"))
         {
             newPosition.x -= speed;
             newScale.x = -currentScale;
@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey("d"))
         {
             newPosition.x += speed;
             newScale.x = currentScale;

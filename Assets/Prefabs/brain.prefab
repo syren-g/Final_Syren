@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4489863313829001058}
   - component: {fileID: 8199987594694407808}
   - component: {fileID: 7476362907983738121}
+  - component: {fileID: 9074067316350768662}
   m_Layer: 0
   m_Name: brain
   m_TagString: Point
@@ -143,9 +144,9 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7774000505438687342}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 0.0001
   m_LinearDamping: 6.21
@@ -162,3 +163,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &9074067316350768662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774000505438687342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed3f82abf205fe4ab3711771dcdfb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  verticalSpeed: 2
+  horizontalSpeed: 2
+  horizontalAmplitude: 1.5
+  xMin: -6
+  xMax: 6
+  startX: 0
+  rb: {fileID: 7476362907983738121}
