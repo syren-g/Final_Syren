@@ -178,7 +178,7 @@ MonoBehaviour:
   verticalSpeed: 2
   horizontalSpeed: 2
   horizontalAmplitude: 1.5
-  xMin: -6
-  xMax: 6
+  xMin: -7
+  xMax: 7
   startX: 0
   rb: {fileID: 7476362907983738121}
