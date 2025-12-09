@@ -9,6 +9,9 @@ public class EnemySpawner : MonoBehaviour
     public float timer = 0;
     public float spawnRate = 5;
 
+    public float difficultyTimer = 20f;
+    public float difficultyInterval = 20f;
+
     public float xMin = -7f;
     public float xMax = 6f;
     public float ySpawn = 6f;
@@ -30,8 +33,18 @@ public class EnemySpawner : MonoBehaviour
 
         }
 
-    }
+        difficultyTimer -= Time.deltaTime;
+        if (difficultyTimer <= 0)
+        {
+            IncreaseDifficulty();
+            difficultyTimer = difficultyInterval;
+        }
 
+    }
+    void IncreaseDifficulty()
+    {
+        spawnRate = Mathf.Max(0.5f, spawnRate - 1f);
+    }
     public void SpawnRandomEnemy()
     {
         int randomI = Random.Range(0, enemyPrefabs.Count);
@@ -48,5 +61,6 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    
 }
 

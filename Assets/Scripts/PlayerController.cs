@@ -16,10 +16,6 @@ public class PlayerController : MonoBehaviour
     Animator anim;
     public bool moving;
     
-
-
-   
-
     // Start is called before the first frame update
     void Start()
     {
@@ -73,13 +69,8 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Ground"))
         {
-            Debug.Log("i hit the ground");
             isGrounded = true;
-        
-
         }
-
-        
     }
 
     private void OnCollisionExit2D(Collision2D collision)
