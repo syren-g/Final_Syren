@@ -5772,7 +5772,7 @@ MonoBehaviour:
   ScoreText: {fileID: 31285573}
   Score: 0
   sourceone: {fileID: 242906803}
-  yumClip: {fileID: 8300000, guid: 1559fafd2dafe9b4baa386eed6410042, type: 3}
+  yumClip: {fileID: 8300000, guid: fcd2d1e2f831d7942b12dc0f1bd45460, type: 3}
   sourcetwo: {fileID: 242906804}
   bleghClip: {fileID: 8300000, guid: 7ba475a0ed899c54aaec133426af1be9, type: 3}
 --- !u!82 &242906802
@@ -5883,7 +5883,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 1559fafd2dafe9b4baa386eed6410042, type: 3}
+  m_Resource: {fileID: 8300000, guid: fcd2d1e2f831d7942b12dc0f1bd45460, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
