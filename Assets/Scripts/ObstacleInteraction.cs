@@ -7,6 +7,11 @@ public class ObstacleInteraction : MonoBehaviour
     public TextMeshPro ScoreText;
     public int Score = 0;
 
+    public AudioSource sourceone;
+    public AudioClip yumClip;
+
+    public AudioSource sourcetwo;
+    public AudioClip bleghClip;
     void Start()
     {
         UpdateScore();
@@ -25,6 +30,7 @@ public class ObstacleInteraction : MonoBehaviour
             Score -= 1;
             Destroy(collision.gameObject);
             UpdateScore();
+            sourcetwo.PlayOneShot(bleghClip);
         }
         else if (collision.gameObject.CompareTag("Point"))
         {
@@ -32,6 +38,7 @@ public class ObstacleInteraction : MonoBehaviour
             Destroy (collision.gameObject);
             Score += 1;
             UpdateScore();
+            sourceone.PlayOneShot(yumClip);
         }
         else if (collision.gameObject.CompareTag("Enemy Special"))
         {
@@ -39,6 +46,7 @@ public class ObstacleInteraction : MonoBehaviour
             Score -= 2;
             Destroy(collision.gameObject);
             UpdateScore();
+            sourcetwo.PlayOneShot(bleghClip);
         }
         else if (collision.gameObject.CompareTag("Point Special"))
         {
@@ -46,6 +54,7 @@ public class ObstacleInteraction : MonoBehaviour
             Destroy(collision.gameObject);
             Score += 2;
             UpdateScore();
+            sourceone.PlayOneShot(yumClip);
         }
 
     }
