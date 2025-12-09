@@ -11478,7 +11478,7 @@ GameObject:
   - component: {fileID: 2085288876}
   - component: {fileID: 2085288875}
   m_Layer: 0
-  m_Name: Ambinet Music
+  m_Name: AmbinetMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
