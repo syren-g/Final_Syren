@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
     public TextMeshPro finalScoreText;
 
     public ObstacleInteraction scoreScript;
+    public PlayerController player;
     void Start()
     {
         timerIsRunning = true;
@@ -49,5 +50,6 @@ public class Timer : MonoBehaviour
 
         
         Time.timeScale = 0f;
+        player.enabled = false;
     }
 }
