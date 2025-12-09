@@ -7,3 +7,6 @@ Use A and D keys to move Left and Right.
 Press Space to Teleport a Small Distance.
 
 Audio: 
+Walking: https://freesound.org/people/taure/sounds/575320/
+Background:
+Collision:
