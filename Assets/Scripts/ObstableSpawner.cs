@@ -9,8 +9,8 @@ public class EnemySpawner : MonoBehaviour
     public float timer = 0;
     public float spawnRate = 5;
 
-    public float difficultyTimer = 20f;
-    public float difficultyInterval = 20f;
+    public float difficultyTimer = 15f;
+    public float difficultyInterval = 15f;
 
     public float xMin = -7f;
     public float xMax = 6f;

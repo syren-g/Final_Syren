@@ -11252,8 +11252,8 @@ MonoBehaviour:
   - {fileID: 7774000505438687342, guid: 3dcbe840e4adc054e8ffc9d867f2a229, type: 3}
   timer: 0
   spawnRate: 5
-  difficultyTimer: 20
-  difficultyInterval: 20
+  difficultyTimer: 15
+  difficultyInterval: 15
   xMin: -8
   xMax: 8
   ySpawn: 6
@@ -11478,7 +11478,7 @@ GameObject:
   - component: {fileID: 2085288876}
   - component: {fileID: 2085288875}
   m_Layer: 0
-  m_Name: ambient
+  m_Name: Ambinet Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
