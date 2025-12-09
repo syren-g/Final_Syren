@@ -12,10 +12,14 @@ public class PlayerController : MonoBehaviour
     
     public bool isGrounded;
 
-    
+    public float teleportDistance = 1f;
+
     Animator anim;
     public bool moving;
-    
+
+    public float xMin = -7f;
+    public float xMax = 7f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +44,12 @@ public class PlayerController : MonoBehaviour
             moving = true;
         }
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Vector3 facingDirection = newScale.x > 0 ? Vector3.right : Vector3.left;
+            newPosition += facingDirection * teleportDistance;
+            newPosition.x = Mathf.Clamp(newPosition.x, xMin, xMax);
+        }
 
         if (Input.GetKey("d"))
         {

@@ -5603,7 +5603,10 @@ MonoBehaviour:
   jumpForce: 20
   speed: 0.01
   isGrounded: 0
+  teleportDistance: 2
   moving: 0
+  xMin: -7
+  xMax: 7
 --- !u!50 &242906797
 Rigidbody2D:
   serializedVersion: 5
