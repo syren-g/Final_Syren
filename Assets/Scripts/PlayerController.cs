@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
 {
     
     Rigidbody2D rb;
-    public float jumpForce;
     public float speed;
     
     public bool isGrounded;
@@ -19,6 +18,8 @@ public class PlayerController : MonoBehaviour
 
     public float xMin = -7f;
     public float xMax = 7f;
+
+    public AudioSource walkingAudio;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,19 @@ public class PlayerController : MonoBehaviour
         Vector3 newScale = transform.localScale;
         float currentScale = Mathf.Abs(transform.localScale.x);
 
+        if (moving)
+        {
+            if(!walkingAudio.isPlaying)
+            {
+                walkingAudio.Play();
+            }
+        }
+        else
+        { if(walkingAudio.isPlaying)
+            {
+                walkingAudio.Stop();
+            }
+        }
 
         if (Input.GetKey("a"))
         {
@@ -65,6 +79,7 @@ public class PlayerController : MonoBehaviour
             moving = false;
 
         }
+
      
 
         anim.SetBool("isMoving", moving);
