@@ -51,7 +51,7 @@ public class ObstacleInteraction : MonoBehaviour
     }
     public void UpdateScore()
     {
-        ScoreText.text = "Score: " + Score;
+        ScoreText.text = "SCORE: " + Score;
     }
 
 
